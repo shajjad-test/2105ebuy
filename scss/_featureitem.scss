@@ -1,0 +1,11 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+#featureItem{
+    .section-head{
+        h3{
+            @include sectionhead;
+            margin-bottom: 85px !important;
+        }
+    } 
+}

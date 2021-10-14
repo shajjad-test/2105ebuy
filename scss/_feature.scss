@@ -1,0 +1,28 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+
+#feature{
+    background: $bg1;
+    .feature-item{
+        padding-top: 32px;
+        padding-bottom: 28px;
+        h4{
+            @include ralereg;
+            font-size: 24px;
+            color: $cl1;
+            margin-bottom: 25px !important;
+            i{
+                color: $hbg;
+                font-size: 40px;
+                margin-right: 10px;
+            }
+        }
+
+        p{
+            @include detail;
+            color: $hbg;
+            padding: 0 24px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+header{
+    background: $hbg;
+    
+    ul{
+        li{
+            border-right: 1px solid #fff;
+            padding: 0 20px;
+            a{
+                @include openreg;
+                font-size: 13px;
+                line-height: 50px;
+            }
+
+            &:last-child{
+                border-right: none;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .header-left{
+        ul{
+            li{
+                &:first-child{
+                    padding-left: 0;
+                }
+                a{
+                    i{
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-right{
+        ul{
+            li{
+                a{
+                    i{
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* =====================
+    header css ends
+===================== */ 

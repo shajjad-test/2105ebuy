@@ -1,0 +1,67 @@
+@import 'variable.scss';
+
+@mixin openreg {
+    font-family: $ff2;
+    font-weight: 400;    
+}
+
+@mixin ralemed {
+    font-family: $ff1;
+    font-weight: 500;
+}
+
+@mixin  ralebold {
+    font-family: $ff1;
+    font-weight: 700;
+}
+
+@mixin ralereg {
+    font-family: $ff1;
+    font-weight: 400;
+}
+
+@mixin detail {
+    @include openreg;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+@mixin ctabtn {
+    line-height: 52px;
+    padding: 0 20px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+@mixin  ctahover {
+    background: $brand;
+    border-color: $brand;
+}
+
+@mixin sectionhead{
+    @include ralemed;
+    font-size: 40px;
+    color: $cl1;
+    position: relative;
+    z-index: 1;
+
+    &::before{
+        content: '';
+        width: 172px;
+        height: 1px;
+        background: $brand;
+        position: absolute;
+        left: 41%;
+        bottom: 0;
+    }
+
+    &::after{
+        content: '';
+        width: 86px;
+        height: 1px;
+        background: $brand;
+        position: absolute;
+        left: 41%;
+        bottom: -5px;
+    }
+}
